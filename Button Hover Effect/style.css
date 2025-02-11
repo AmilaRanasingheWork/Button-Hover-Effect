@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button{
+    width: 250px;
+    height: 90px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 90px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+button span:nth-child(1){
+    background-color: #3498db;
+    transform: rotateX(90deg);
+    transform-origin: 50% 50% -40px;
+}
+
+button span:nth-child(2){
+    background-color: #ff5733;
+    transform: rotateX(0deg);
+    transform-origin: 50% 50% -40px;
+}
+
+button:hover span:nth-child(1){
+    transform: rotateX(0deg);
+}
+
+button:hover span:nth-child(2){
+    color: transparent;
+    transform: rotateX(-90deg);
+}
+
+
+
+
+
+
+
+
+
